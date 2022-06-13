@@ -7,7 +7,7 @@
     <title>Laravel</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-
+@dump($movies)
 <body>
     <div class="container">
         <div class="row mt-5 gx-5 gy-4 justify-content-between">
@@ -15,7 +15,7 @@
             <div class="col-12 col-xl-3 col-lg-4 col-md-6">
                 <div class="card m-auto" style="width: 18rem;">
                     <div class="card-body">
-                        <h4 class="card-title">{{$movie->title}}</h4>
+                     <h4 class="card-title">Id:{{$movie->id}} {{$movie->title}}</h4>
                         <h6 class="card-text">Original - title: {{$movie->original_title}}</h6>
                         <p class="card-text">Nationality: {{$movie->nationality}}</p>
                         <p class="card-text">Vote: <strong>{{$movie->vote}}</strong></p>
@@ -27,5 +27,4 @@
         </div>
     </div>
 </body>
-
 </html>
