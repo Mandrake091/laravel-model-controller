@@ -1,0 +1,10 @@
+@import './variables';
+.card{
+    background-color: $cyan-900;
+    .card-title{
+        color: $teal-600;
+    }
+    .card-text{
+        color: $orange-600;
+    }
+}
